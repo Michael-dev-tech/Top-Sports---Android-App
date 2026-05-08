@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Top Sports</string>
+
+    <!-- Auth -->
+    <string name="login">Autentificare</string>
+    <string name="register">Înregistrare</string>
+    <string name="username">Username</string>
+    <string name="password">Parolă</string>
+    <string name="full_name">Nume complet</string>
+    <string name="age">Vârstă</string>
+    <string name="city">Oraș</string>
+    <string name="sport">Sport practicat</string>
+    <string name="years_experience">Ani de experiență</string>
+    <string name="bio">Bio (opțional)</string>
+    <string name="dont_have_account">Nu ai cont? Înregistrează-te</string>
+    <string name="already_have_account">Ai deja cont? Autentifică-te</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Sporturi</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Home -->
+    <string name="title_home">Sporturi Populare</string>
+    <string name="tap_for_leagues">Apasă pe un sport pentru a vedea ligile</string>
+    <string name="retry">Reîncearcă</string>
+    <string name="loading">Se încarcă...</string>
+    <string name="no_sports">Niciun sport disponibil</string>
+
+    <!-- Profile -->
+    <string name="edit_profile">Editează Profilul</string>
+    <string name="logout">Deconectare</string>
+    <string name="save">Salvează</string>
+    <string name="cancel">Anulează</string>
+    <string name="experience_years">ani experiență</string>
+    <string name="years_old">ani</string>
+</resources>

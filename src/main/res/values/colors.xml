@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#1A237E</color>
+    <color name="colorPrimaryDark">#0D1757</color>
+    <color name="colorPrimaryLight">#3949AB</color>
+    <color name="colorAccent">#FF6F00</color>
+    <color name="colorAccentLight">#FFA726</color>
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorCardBackground">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextOnPrimary">#FFFFFF</color>
+    <color name="colorTextHint">#BDBDBD</color>
+
+    <!-- Status Colors -->
+    <color name="colorSuccess">#43A047</color>
+    <color name="colorError">#E53935</color>
+    <color name="colorWarning">#FB8C00</color>
+
+    <!-- Divider and Border -->
+    <color name="colorDivider">#E0E0E0</color>
+    <color name="colorBorder">#BDBDBD</color>
+
+    <!-- Special -->
+    <color name="colorGradientStart">#1A237E</color>
+    <color name="colorGradientEnd">#3949AB</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorShadow">#1A000000</color>
+
+    <!-- Bottom Navigation -->
+    <color name="nav_item_active">#FF6F00</color>
+    <color name="nav_item_inactive">#9E9E9E</color>
+</resources>
