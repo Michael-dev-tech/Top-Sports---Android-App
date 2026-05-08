@@ -44,3 +44,6 @@ TheSportsDB — free and no API key needed for the basic endpoints.
 
 - `GET /api/v1/json/3/all_sports.php` — returns the full list of sports
 - `GET /api/v1/json/3/search_all_leagues.php?s={sport}` — returns leagues for a given sport
+
+<img width="2388" height="1452" alt="image" src="https://github.com/user-attachments/assets/0b51131d-5d7a-4681-9324-4c09a22910ec" />
+
