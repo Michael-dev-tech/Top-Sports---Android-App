@@ -1,46 +1,46 @@
 # TopSports
 
-Aplicatie Android dezvoltata ca proiect final pentru laboratorul de Android. Ideea a venit din faptul ca voiam ceva legat de sport, mai exact o aplicatie unde poti sa iti faci un profil ca sportiv si sa explorezi sporturi si ligi din toata lumea.
+Android app built as a final project for the Android lab. The idea came from wanting to do something sport-related — basically an app where you can set up a profile as an athlete and browse sports and leagues from around the world.
 
-## Ce face aplicatia
+## What it does
 
-Practic sunt doua parti principale. Prima e partea de profil — te inregistrezi cu datele tale (nume, varsta, oras, sportul pe care il practici), si dupa iti poti edita oricand profilul. A doua parte e lista de sporturi care vine dintr-un API public, TheSportsDB, si daca apesi pe un sport vezi si ligile disponibile pentru el.
+There are two main parts. The first one is the profile side — you register with your details (name, age, city, sport you practice), and you can edit your profile whenever you want. The second part is the sports list which pulls data from a public API, TheSportsDB, and if you tap on a sport you can also see the available leagues for it.
 
-## Cum rulezi proiectul
+## How to run it
 
-Ai nevoie de Android Studio instalat. Deschizi folderul proiectului din File > Open, astepti sa faca Gradle sync (poate dura cateva minute prima data), si dupa dai Run fie pe un emulator fie pe un telefon fizic cu USB debugging activat.
+You need Android Studio installed. Open the project folder via File > Open, wait for Gradle sync to finish (can take a few minutes the first time), then hit Run either on an emulator or a physical device with USB debugging enabled.
 
-O problema intalnita: daca apare eroarea cu `allprojects repositories`, stergi blocul ala din `build.gradle`-ul de la root. Alta problema frecventa e cu JVM-ul — daca te intreaba, alegi JVM 17.
+One issue I ran into: if you get an error about `allprojects repositories`, just remove that block from the root `build.gradle`. Another common one is the JVM version — if it asks, go with JVM 17.
 
-## Structura
+## Structure
 
-Am incercat sa tin codul organizat dupa MVVM cat de bine am putut:
+I tried to keep the code organized around MVVM as much as I could:
 
 ```
-ui/         - activitati si fragmente
+ui/           - activities and fragments
 data/
-  local/    - Room DB (entity, dao, database)
-  remote/   - Retrofit (api service, modele, client)
-  repository/ - leaga local cu remote
-adapter/    - RecyclerView adapter pentru lista de sporturi
-utils/      - SessionManager pentru SharedPreferences
+  local/      - Room DB (entity, dao, database)
+  remote/     - Retrofit (api service, models, client)
+  repository/ - bridges local and remote
+adapter/      - RecyclerView adapter for the sports list
+utils/        - SessionManager for SharedPreferences
 ```
 
-## Tech folosit
+## Tech used
 
 - Kotlin
-- Room pentru baza de date locala
-- Retrofit + Gson pentru requesturile HTTP
-- Navigation Component pentru navigarea intre ecrane
+- Room for local database
+- Retrofit + Gson for HTTP requests
+- Navigation Component for screen navigation
 - ViewModel + LiveData
-- Coroutines pentru operatii async
-- SharedPreferences pentru sesiunea utilizatorului
-- Glide pentru imaginile din lista
+- Coroutines for async operations
+- SharedPreferences for user session
+- Glide for loading images
 - Material Design components
 
 ## API
 
-TheSportsDB — e gratuit si nu necesita API key pentru endpointurile de baza.
+TheSportsDB — free and no API key needed for the basic endpoints.
 
-- `GET /api/v1/json/3/all_sports.php` — returneaza lista tuturor sporturilor
-- `GET /api/v1/json/3/search_all_leagues.php?s={sport}` — returneaza ligile pentru un sport anume
+- `GET /api/v1/json/3/all_sports.php` — returns the full list of sports
+- `GET /api/v1/json/3/search_all_leagues.php?s={sport}` — returns leagues for a given sport
